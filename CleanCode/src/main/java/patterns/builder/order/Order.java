@@ -1,7 +1,5 @@
 package patterns.builder.order;
 
-import patterns.facade.house.Light;
-
 import java.util.ArrayList;
 import java.util.List;
 
