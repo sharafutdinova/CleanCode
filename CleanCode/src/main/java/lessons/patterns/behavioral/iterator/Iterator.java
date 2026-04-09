@@ -1,0 +1,7 @@
+package lessons.patterns.behavioral.iterator;
+
+public interface Iterator<T> {
+    boolean hasNext(); // метод возвращает true если есть след элемент в коллекции
+
+    T next(); // метод возвращает следующий элемент коллекции
+}
