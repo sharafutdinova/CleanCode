@@ -8,6 +8,6 @@ public class NotificationService {
     }
 
     public void sendNotification(String message) {
-        messageSender.sendEmail(message);
+        messageSender.sendMessage(message);
     }
 }
