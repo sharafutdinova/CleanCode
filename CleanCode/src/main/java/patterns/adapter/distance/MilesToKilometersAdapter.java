@@ -8,7 +8,7 @@ public class MilesToKilometersAdapter {
         this.miles = miles;
     }
 
-    public double calculateKilometers() {
-        return miles.getDistance() * this.COEFFICIENT_FROM_MILIES_TO_KM;
+    public double getDistanceInKm() {
+        return miles.getDistanceInMiles() * this.COEFFICIENT_FROM_MILIES_TO_KM;
     }
 }

@@ -1,4 +1,4 @@
-package patterns.absrtactfabric.furniture;
+package patterns.abstractfabric.furniture;
 
 public class Main {
 //    Описание
