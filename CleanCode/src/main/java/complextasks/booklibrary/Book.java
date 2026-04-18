@@ -22,9 +22,12 @@ public class Book {
         this.content = bookBuilder.content;
         this.pathToCover = bookBuilder.pathToCover;
     }
+    public String getContent() {
+        return content;
+    }
 
     public void read() {
-        System.out.println("Book " + this.name + " " + this.author + " is reader.");
+        System.out.println("Book " + this.name + " " + this.author + " is read.");
     }
 
     @Override

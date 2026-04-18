@@ -1,5 +1,5 @@
 package complextasks.streamingservice;
 
 public interface VideoAdapter {
-    Video convertToMP4(String path);
+    Video convertToMP4(Video video);
 }

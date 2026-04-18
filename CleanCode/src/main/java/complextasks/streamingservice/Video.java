@@ -2,10 +2,10 @@ package complextasks.streamingservice;
 
 public class Video {
     private String name;
-    private String type;
+    private VideoType type;
     private int id;
 
-    public Video(String name, String type) {
+    public Video(String name, VideoType type) {
         this.name = name;
         this.type = type;
     }
@@ -26,11 +26,11 @@ public class Video {
         this.name = name;
     }
 
-    public String getType() {
+    public VideoType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(VideoType type) {
         this.type = type;
     }
 

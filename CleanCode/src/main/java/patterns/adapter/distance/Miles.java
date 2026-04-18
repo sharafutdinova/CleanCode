@@ -1,13 +1,9 @@
 package patterns.adapter.distance;
 
 public class Miles {
-    private double distance;
+    private double distance = 10;
 
-    public Miles(double distance) {
-        this.distance = distance;
-    }
-
-    public double getDistance() {
+    public double getDistanceInMiles() {
         return distance;
     }
 }

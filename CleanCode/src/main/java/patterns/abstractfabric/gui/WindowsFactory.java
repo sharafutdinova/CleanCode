@@ -1,4 +1,4 @@
-package patterns.absrtactfabric.gui;
+package patterns.abstractfabric.gui;
 
 public class WindowsFactory implements GUIfactory {
     @Override

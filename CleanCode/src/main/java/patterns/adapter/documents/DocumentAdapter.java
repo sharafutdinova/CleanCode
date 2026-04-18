@@ -1,8 +1,16 @@
 package patterns.adapter.documents;
 
 public class DocumentAdapter {
-    public static DOCProcessor convertPDFToDoc(PDFProcessor pdfProcessor) {
-        System.out.println("Конвертация PDF в Doc");
-        return new DOCProcessor();
+    private DocumentProcessor documentProcessor;
+
+    public DocumentAdapter(DocumentProcessor documentProcessor) {
+        this.documentProcessor = documentProcessor;
+    }
+
+    public void processDocument() {
+        if (documentProcessor.getClass() == PDFProcessor.class) {
+            System.out.println("Конвертация PDF в Doc");
+        }
+        documentProcessor.process();
     }
 }
