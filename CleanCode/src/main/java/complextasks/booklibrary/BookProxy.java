@@ -19,6 +19,6 @@ public class BookProxy {
         if (book == null) {
             book = new Book(bookBuilder);
         }
-        return book.toString();
+        return book.getContent();
     }
 }

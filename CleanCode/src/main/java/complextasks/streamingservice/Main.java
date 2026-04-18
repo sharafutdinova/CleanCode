@@ -12,13 +12,16 @@ package complextasks.streamingservice;
 //VideoAdapter: Интерфейс и его реализации для каждого поддерживаемого формата видео, преобразующие видео в формат MP4.
 public class Main {
     static void main(String[] args) {
-        VideoService videoService = new VideoService(new VideoAdapterAVI(), new VideoAdapterMOV());
-        String videoAVIPath = "/test/path/video1.avi";
-        Video videoAVI = videoService.uploadVideo(videoAVIPath);
+        VideoService videoService = new VideoService();
+        videoService.addVideoAdapter(VideoType.AVI, new VideoAdapterAVI());
+        videoService.addVideoAdapter(VideoType.MOV, new VideoAdapterMOV());
+
+        Video videoAVI = new Video("Funny video", VideoType.AVI);
+        videoAVI = videoService.uploadVideo(videoAVI);
         videoService.streamVideo(videoAVI.getId());
 
-        String videoMOVPath = "/test/path/video1.mov";
-        Video video = videoService.uploadVideo(videoMOVPath);
+        Video video = new Video("MP4 video", VideoType.MP4);
+        video = videoService.uploadVideo(video);
         videoService.streamVideo(video.getId());
 
     }
